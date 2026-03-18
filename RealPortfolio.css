@@ -49,6 +49,11 @@ header{
 	transform: scale(1.1);
 }
 nav a{
+	position: relative;
+	color: #333;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	transition: color0.3s;
 	font-size: 1.8rem;
 	color: rgba (74, 58, 54, 1);
 	margin-left: 4rem;
