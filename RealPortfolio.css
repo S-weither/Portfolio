@@ -1,0 +1,258 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	background-color: white;
+	color: black;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem 0%;
+	background-color: transparent;
+	filter: drop-shadow(10px);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 1000;
+	background-color: rgba (255,182,193, 0.3);
+
+}
+.logo{
+	font-size: 4rem;
+	color: #FFE2E7;
+	font-weight: 800;
+	cursor: pointer;
+	transition: 0.5 ease;
+	margin-right: 20%;
+}
+.logo:hover{
+	transform: scale(1.1);
+}
+nav a{
+	font-size: 1.8rem;
+	color: black;
+	margin-left: 4rem;
+	font-weight: 500;
+	transition: 0.3s ease;
+	border-bottom: 3px solid transparent;
+}
+.nav a:hover,
+.nav a.active{
+	color: white;
+	border-bottom: 3px solid #FDECEF;
+} 
+@media(max-width:995px){
+	nav{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 40%;
+	border-left: 3px solid #FDECEF;
+	border-bottom: 3px solid;
+	border-bottom-left-radius: 2rem;
+	padding: 1rem solid;
+	background-color: white;
+	border-top: 0.1rem solid #FDECEF;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 1rem 2rem;
+	z-index: 1000;
+	display: flex;
+	gap: 2rem;
+	}
+	
+	nav.active{
+		display:block;
+	}
+	
+	nav a{
+		display: block;
+		font-size: 2rem;
+		margin: 3rem 0;
+	}
+	
+	nav a:hover,
+	nav a.active{
+		padding: 1rem;
+		border-radius:0.5rem;
+		border-bottom: 0.5rem solid #FDECEF;
+	}
+}
+
+section{
+	min-height: 100vh;
+	padding:5rem 9% 5rem;
+}
+
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8rem;
+	background-color: white;
+	min-height: 100vh;
+	margin-top: 10px;
+}
+
+.home .home-content h1{
+	font-size: 6rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+span{
+	color: #FDECEF;
+}
+
+.home-content h3{
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	font-weight:700;
+}
+
+.home-img{
+	border-radius: 50%;
+}
+
+.home-img img{
+	position: relative;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 0 25px ;
+	cursor: pointer;
+	transition: 0.2s linear;
+}
+.home-img img::hover{
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.social-icons a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	background-color: transparent;
+	border: 0.2rem solid #FDECEF;
+	font-size: 2rem;
+	border-radius: 50%;
+	margin: 3rem 1.5rem 3rem;
+	transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+	color: black;
+	transform: scale(1.3) transparent;
+	background-color:pink;
+	box-shadow: 0 0 25px;
+}
+.btn{
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background-color: silver;
+	border-radius: 4rem;
+	font-size: 1.6rem;
+	color:black;
+	letter-spacing: 0.3rem;
+	font-weight:600;
+	border: 2px solid white;
+	transition: 0.3S ease;
+	cursor: pointer;
+}
+
+.btn:hover{
+	transform: scale(1.03);
+	background-color: pink;
+	box-shadow: 0 0 25px white;
+	
+}
+.typing-text{
+	font-size: 34px;
+	font-weight: 600;
+	min-width: 280px;
+}
+.typing-text span{
+	position: relative;
+}
+
+.typing-text span::before{
+	content: " BTS SIO Student";
+	color: #FDECEF;
+	animation: words 20s infinite;
+}
+
+.typing-text span::after{
+	content:"";
+	background-color: black;
+	position: relative;
+	width: calc(100% + 8px);
+	height:100%;
+	border-left: 3px solid black;
+	right: -8;
+	animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+	to{
+		border-left: 3px solid pink;
+	}
+}
+
+@keyframes words{
+	0%, 20%{
+		content: " BTS SIO Student ";
+	}
+	21%, 40%{
+		content: " Futur engeneer ";
+	}
+	40%,60% {
+		content: " Women in stem ";
+	}
+	61%, 80%{
+		content: " Hard Worker ";
+	}
+	81%, 100%{
+	content: " Star ";
+		
+	}
+}
+	
+@media(max-width:1000px){
+	.home(
+		gap: 4rem;
+	)
+}
+
+@media(max-width: 995px){
+	.home(
+	flex-direction; column;
+	margin: 5rem 4rem;
+	)
+	
+	.home.home-content h3(
+	
+	)
+	
+}
