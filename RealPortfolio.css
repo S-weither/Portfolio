@@ -250,20 +250,14 @@ a{
 }
 
 @keyframes words{
-	0%, 20%{
-		content: " BTS SIO Student ";
+	0%, 33%{
+		content: " une étudiante en BTS SIO ";
 	}
-	21%, 40%{
-		content: " Futur engeneer ";
+	34%, 66%{
+		content: " curieuse et motivé ";
 	}
-	40%,60% {
-		content: " Women in stem ";
-	}
-	61%, 80%{
-		content: " Hard Worker ";
-	}
-	81%, 100%{
-	content: " Star ";
+	67%, 100% {
+		content: " en spécialisation réseaux ";;
 		
 	}
 }
